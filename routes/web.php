@@ -32,7 +32,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+/*** url de login de hotel et boutique***/
+Route::get('/formulaires/registerHotels','controlHotelsRegister@index');
+Route::get('/formulaires/registerBoutique','controlBoutiqueRegister@index');
+/******/
 
 Route::get('/resto', 'RestoController@index')->name('resto');
 Route::post('/reservation','ReservationController@reserve')->name('reservation.reserve');
